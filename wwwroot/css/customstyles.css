@@ -4,8 +4,17 @@
   box-sizing: border-box;
 }
 
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+html, body {
+   height: 100%;
+}
+
 body {
-   background-color: #F7F5EB;
+   background-color: #b3a88c;
    margin-left: 0;
    margin-right: 0;
    margin-top: 0;
@@ -56,16 +65,17 @@ body {
 .navbarwrap {
    padding: 0 14% 0 14%;
    width: 100%;
+   z-index: 1000;
 }
 
 .navbar {
    width: 100%;
    display: flex;
-   font-family: 'Lato', Helvetica;
+   font-family: 'Roboto Slab', Helvetica;
    font-size: 1.2vw;
    transition: font-size 200ms ease;
    background-color: #F7F5EB;
-   border-bottom: 1px #fff solid;
+   box-shadow: 0px 2px 8px rgba(0,0,0,.5);
 }
 
 .navbarfill {
@@ -77,7 +87,7 @@ body {
    flex-grow: 1;
    flex-basis: 0;
    margin-right: 1px;
-   background-color: rgba(122, 116, 84, 0.5);
+   background-color: rgba(124, 105, 98, 0.8);
    min-height: 100%;
    display: flex;
    align-items: center;
@@ -87,7 +97,7 @@ body {
 }
 
 .navbar .navlinks:hover {
-   background-color: rgba(122, 116, 84, 1);
+   background-color: rgba(124, 105, 98, 1);
 }
 
 .navbar .navlinks span {
@@ -99,8 +109,8 @@ body {
 }
 
 .intro {
-   margin: 30px 0 0 0;
-   padding-bottom: 8vw;
+   margin: 45px 0 0 0;
+   padding-bottom: 5vw;
    display: flex;
 }
 
@@ -111,9 +121,12 @@ body {
 .intro .introleft {
    display: flex;
    flex-direction: column;
-   justify-content: center;
    width: 40%;
    color: #3a3a3a;
+}
+
+.intro .introleft div {
+   flex-grow: 1;
 }
 
 .intro .introleft p {
@@ -123,13 +136,13 @@ body {
    font-size: 1.1vw;
    word-spacing: 0.2em;
    font-family: 'Lato', Helvetica;
-   margin-bottom: 80px;
    background-color: rgba(255,255,255,0.3);
 }
 
 .intro .introleft h1 {
    font-size: 1.6vw;
-   border-bottom: 1px solid rgba(175, 168, 130, 1);
+   color: #000;
+   border-bottom: 1px solid #000;
    margin-left: 32%;
    margin-right: 6%;
    word-spacing: 0.2em;
@@ -137,29 +150,86 @@ body {
    padding-bottom: 8px;
 }
 
-.intro .introright {
-   min-height: 55vw;
-   width: 60%;
-}
-
-.intro .introright h1 {
-   margin-top: 48%;
-   padding-left: 6%;
-   padding-bottom: 8px;
+.introphoto h1 {
+   position: absolute;
+   top: 41%;
+   left: 0;
+   padding-left: 12%;
+   text-align: center;
+   width: 100%;
    font-family: 'Raleway', Helvetica;
-   font-size: 1.8vw;
-   background-color: rgba(255,255,255,0.5);
+   font-size: 1.7vw;
+   background-color: rgba(0,0,0,0.8);
+   color: #fff;
 }
 
-.intro .introright h1:first-letter {
-   float: left;
-   font-size: 2.3vw;
+.introphoto h1:first-letter {
+   font-size: 2.5vw;
+   vertical-align: sub;
 }
 
 .intro .introright {
    max-width: 50%;
    background: url(../images/aboutphotos.png) no-repeat;
    background-size: contain;
+   min-height: 53.45vw;
+   margin-right: 2%;
+}
+
+.intro .introrightnew {
+   width: 50%;
+   margin-right: 2%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.introphotoupper {
+   z-index: 30;
+}
+
+.introphotoupper, .introphotolower {
+   display: flex;
+   flex-grow: 1;
+   width: 100%;
+}
+
+.introphotospace {
+   flex-grow: 1;
+   width: 12%;
+   background-color: #444c42;
+}
+
+.introphoto {
+   flex-grow: 1;
+   background-color: #444c42;
+   display: flex;
+   box-shadow: -7px 5px 15px rgba(0,0,0,.9);
+   position: relative;
+}
+
+.introphoto img {
+   flex-grow: 1;
+   align-self: center;
+   width: 88%;
+   max-height: 100%;
+}
+
+.introphotofoldleft, .introphotofoldright {
+   width: 6%;
+   max-width: 6%;
+}
+
+.introphotofoldright {
+   background: url('../images/introfoldright.svg') no-repeat;
+   background-size: contain;
+   background-position: bottom;
+}
+
+.introphotofoldleft {
+   background: url('../images/introfoldleft.svg') no-repeat;
+   background-size: contain;
+   background-position: top;
 }
 
 .navbar .navlogo {
@@ -168,13 +238,13 @@ body {
   transition: width 200ms ease, margin 200ms ease, background-color .3s ease;
   display: flex;
   align-items: center;
-  background-color: rgba(122, 116, 84, 0.5);
+  background-color: rgba(124, 105, 98, 0.8);
   cursor: pointer;
   outline: none;
 }
 
 .navbar .navlogo:hover {
-   background-color: rgba(122, 116, 84, 1);
+background-color: rgba(124, 105, 98, 1);
 }
 
 .navbar .navexpand {
@@ -197,23 +267,33 @@ body {
    margin: 0 14%;
 }
 
-.products h1 {
+.products h1, .employees > h1, .contact > h1 {
+   display: block;
    text-align: center;
-   margin: 0;
+   margin: 0 0 6px 0;
    font-family: 'Lato', Helvetica;
-   font-size: 2.2vw;
+   font-size: 2.8vw;
 }
 
 .productblocks {
    width: 100%;
    display: flex;
+   justify-content: space-between;
    flex-wrap: wrap;
-   background-color: rgba(216, 203, 177, 0.4);
+   background: url(../images/pipe.svg) no-repeat;
+   background-size: cover;
+   background-color: rgba(255,255,255,0.4);
+   padding: 30px 0;
 }
+
 
 .productblock {
    width: 50%;
    display: flex;
+   transition: box-shadow .4s ease;
+}
+
+.productblock:nth-child(odd) {
 }
 
 .productblock:nth-child(odd) {
@@ -244,7 +324,7 @@ body {
 
 .productinfo h2 {
    border-bottom: 1px solid #000;
-   font-size: 1.6vw;
+   font-size: 1.4vw;
    margin: 10px 0;
 }
 
@@ -263,4 +343,301 @@ body {
 
 .productinfo ul {
    padding-left: 20px;
+}
+
+.employees {
+   margin: 60px 0 0 0;
+   width: 100%;
+}
+
+.employeeblocks {
+   display: flex;
+   margin: 0 14%;
+   margin-left: calc(14% - 76px);
+   margin-right: calc(14% - 76px);
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.employeeblockleft {
+   width: 49%;
+   margin-bottom: 30px;
+   margin-top: 10px;
+   background: url("../images/foldbackground.svg") no-repeat;
+   background-position: left bottom;
+}
+
+.employeeblockright {
+   width: 49%;
+   margin-bottom: 30px;
+   margin-top: 10px;
+   background: url("../images/foldbackgroundright.svg") no-repeat;
+   background-position: right bottom;
+}
+
+
+.employeeblockleft .employeeinner {
+   width: calc(100% - 76px);
+   margin-left: 76px;
+   background: url(../images/backgroundright.svg) no-repeat;
+   background-position: right;
+   background-size: contain;
+   background-color: rgba(255, 255, 255, 0.4);
+   display: flex;
+   flex-direction: column;
+   box-shadow: -4px 4px 10px rgba(0,0,0,.7);
+}
+
+.employeeblockright .employeeinner {
+   width: calc(100% - 76px);
+   margin-right: 76px;
+   background: url(../images/backgroundleft.svg) no-repeat;
+   background-position: left;
+   background-size: contain;
+   background-color: rgba(255, 255, 255, 0.4);
+   display: flex;
+   flex-direction: column;
+   box-shadow: 4px 4px 10px rgba(0,0,0,.7);
+}
+
+.employeeupper {
+   flex-grow: 1;
+   display: flex;
+}
+
+.employeelower {
+   height: 125px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border: 1px solid #000;
+   margin: 10px;
+   flex-direction: column;
+}
+
+.employeeinfo {
+   padding: 10px;
+   flex-grow: 1;
+   font-family: 'Lato', Helvetica;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.employeeinfo a {
+   text-decoration: none;
+   color: #000;
+}
+
+.employeeinfo h1 {
+   font-size: 1.8vw;
+   border-bottom: 1px solid #000;
+}
+
+.employeeinfo h2 {
+   font-size: 1.1vw;
+}
+
+.employeeinfo h3 {
+   font-size: 1vw;
+}
+
+.employeebio {
+   margin: 20px;
+   font-family: Helvetica;
+   font-size: 1vw;
+}
+
+.employeeblockright .employeeinfo {
+   text-align: right;
+}
+
+.employeeblockleft .employeeimg {
+   width: 45%;
+   height: auto;
+   margin-top: -10px;
+   margin-left: -64px;
+   padding: 2%;
+   background-color: #444c41;
+   box-shadow: -7px 5px 15px rgba(0,0,0,.9);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.employeeblockright .employeeimg {
+   width: 45%;
+   height: auto;
+   margin-top: -10px;
+   margin-right: -64px;
+   padding: 2%;
+   background-color: #444c41;
+   box-shadow: 7px 5px 15px rgba(0,0,0,.9);
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.employeeimg img {
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+   height: auto;
+}
+
+.contact {
+   margin-top: 30px;
+}
+
+.contactinner {
+   display: flex;
+   flex-direction: column;
+   margin: 20px 14% 55px 14%;
+   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.contactupper {
+   width: 100%;
+   height: 24vw;
+   display: flex;
+}
+
+.contactupperleft {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   text-align: center;
+   font-family: 'Lato', Helvetica;
+   font-size: 1.2vw;
+   padding-top: 3%;
+   background: url(../images/paperairplane.svg) no-repeat;
+   background-position: left;
+   background-size: contain;
+}
+
+.contactupperleft div {
+   flex-grow: 1;
+}
+
+.contactupperleft h2 {
+   font-size: 1.3vw;
+   margin: 0 5% 10px 5%;
+   border-bottom: 1px solid rgba(0,0,0,.5);
+   text-align: left;
+}
+
+.contactupperright {
+   flex-grow: 2;
+   height: 100%;
+   padding: 1vw;
+   background-color: #2e3f45;
+   margin: -15px -30px 0 0;
+   box-shadow: 0px 5px 15px rgba(0,0,0,.9);
+}
+
+#map {
+   height: 22vw;
+}
+
+.contactlower {
+   height: 20vw;
+   width: calc(100% + 60px);
+   background-color: #2e3f45;
+   box-shadow: 0px 5px 15px rgba(0,0,0,.9);
+   margin: 0 0 -30px -30px;
+}
+
+.contactlowerinner {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+}
+
+.contactlowerinner textarea {
+   flex-grow: 1;
+   width: 100%;
+   resize: none;
+   font-size: 1vw;
+   background-color: #c7c8c9;
+   outline: none;
+}
+
+.contactlowerinner form {
+   margin: 0 auto;
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+   width: 70%;
+}
+
+.contactlowerinner form input {
+   flex-grow: 1;
+   margin: 0 5px;
+   font-size: 0.9vw;
+}
+
+.contactlowerinner form input[type="text"] {
+   background-color: #c7c8c9;
+   outline: none;
+}
+
+.copyright {
+   width: 100%;
+   text-align: center;
+   font-size: 0.9vw;
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+   .header, .products, .employeeblocks, .contactinner {
+      margin-left: 2%;
+      margin-right: 2%;
+   }
+   .navbarwrap {
+      padding-left: 2%;
+      padding-right: 2%;
+   }
+   .intro, .employees {
+      margin-top: 25px;
+   }
+   .contact {
+      margin-top: 0;
+   }
+   .contactlower, .contactupperright {
+      margin: 0;
+   }
+   .contactlower {
+      width: 100%;
+      margin-top: 10px;
+   }
+   .intro .introleft h1, .intro .introleft p {
+      margin-left: 6%;
+   }
+   .introphoto img {
+      height: 100%;
+   }
+   .headerinfo, .contactlowerinner textarea, .contactlowerinner form input {
+      font-size: 1.3vw;
+   }
+   .intro .introleft p, .productinfo ul, .employeebio, .employeeinfo h3 {
+      font-size: 1.4vw;
+   }
+   .employeeinfo h2, .productinfo h3, .contactupperleft, .navbar {
+      font-size: 1.5vw;
+   }
+   .productinfo h2, .contactupperleft h2, .intro .introleft h1 {
+      font-size: 1.7vw;
+   }
+
 }
