@@ -7,15 +7,22 @@ $(document).ready(function() {
    if ($(window).width() > 992) {
       windowSize = 3;
    }
-   else if ($(window).width() <= 992) {
+   else if ($(window).width() <= 992 && $(window).width() > 767) {
       windowSize = 2;
    }
+   else if ($(window).width() <= 767) {
+      windowSize = 1;
+   }
+
    $(window).resize(function() {
       if ($(window).width() > 992) {
          windowSize = 3;
       }
-      else if ($(window).width() <= 992) {
+      else if ($(window).width() <= 992 && $(window).width() > 767) {
          windowSize = 2;
+      }
+      else if ($(window).width() <= 767) {
+         windowSize = 1;
       }
    });
 
@@ -35,6 +42,9 @@ $(document).ready(function() {
             else if (windowSize == 2) {
                $('.navbar').css({'fontSize': '1.8vw'});
             }
+            else if (windowSize == 3) {
+               $('.navbar').css({'fontSize': '2.8vw'});
+            }
 
             $('.navbarfill').css({height: navbarHeight});
             $('.navbarfill').show();
@@ -51,6 +61,9 @@ $(document).ready(function() {
          }
          else if (windowSize == 2) {
             $('.navbar').css({'fontSize': '1.4vw'});
+         }
+         else if (windowSize == 3) {
+            $('.navbar').css({'fontSize': '2.8vw'});
          }
 
          $('.navbarwrap').css({position: "absolute", top:headerHeight});

@@ -121,7 +121,7 @@ body {
 .intro .introleft {
    display: flex;
    flex-direction: column;
-   width: 40%;
+   width: 45%;
    color: #3a3a3a;
 }
 
@@ -169,19 +169,12 @@ body {
 }
 
 .intro .introright {
-   max-width: 50%;
-   background: url(../images/aboutphotos.png) no-repeat;
-   background-size: contain;
-   min-height: 53.45vw;
-   margin-right: 2%;
-}
-
-.intro .introrightnew {
    width: 50%;
    margin-right: 2%;
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   justify-content: center;
+   flex-grow: 1;
 }
 
 .introphotoupper {
@@ -489,6 +482,10 @@ background-color: rgba(124, 105, 98, 1);
    height: auto;
 }
 
+.hiddenlg {
+   display: none;
+}
+
 .contact {
    margin-top: 30px;
 }
@@ -640,4 +637,113 @@ background-color: rgba(124, 105, 98, 1);
       font-size: 1.7vw;
    }
 
+}
+
+@media only screen and (max-width: 767px) {
+   .headerlogo {
+      width: 100%;
+      padding: 0;
+   }
+   .header {
+      flex-wrap: wrap;
+   }
+   .headerinfo p {
+      margin: 8px 0;
+   }
+   .headerinfo {
+      padding: 4px 0;
+   }
+   .navbar .navlogo, .navbar .navlogoimg {
+      transition: none;
+   }
+   .navbar .navexpand {
+      width: 90px;
+   }
+   .navlogo .imgexpand {
+      width: 80px;
+   }
+   .intro .introright {
+      display: none;
+   }
+   .intro .introleft {
+      width: 100%;
+      margin-left: 2%;
+      margin-right: 2%;
+   }
+   .productblock {
+      width: 100%;
+   }
+   .hiddenlg {
+      display: block;
+   }
+   .hiddensm {
+      display: none;
+   }
+   .employeeblockleft, .contactupperleft, .contactupperright {
+      width: 100%;
+   }
+   .employeeblockleft {
+      background: none;
+      margin: 0px 0 15px 0;
+   }
+   .employeeblockleft .employeeimg {
+      margin: 0;
+   }
+   .employeeblockleft .employeeinner {
+      width: 100%;
+      margin: 0;
+   }
+   .employeelower {
+      height: auto;
+   }
+   .productblocks {
+      background: none;
+      background-color: rgba(255,255,255,0.4);
+   }
+   .productinfo {
+      flex-grow: 2;
+   }
+   .contactupper {
+      flex-wrap: wrap;
+      height: auto;
+   }
+   .contactupperleft {
+      padding: 4% 0;
+      background-position: center;
+   }
+   .contactinner {
+      margin: 0 2% 10px 2%;
+   }
+   #map, .contactlower {
+      height: 32vw;
+   }
+   .headerinfo, .contactlowerinner textarea, .contactlowerinner form input, .copyright, .employeeinfo h3 {
+      font-size: 3vw;
+   }
+   .intro .introleft p, .productinfo ul, .employeebio {
+      font-size: 3.1vw;
+   }
+   .employeeinfo h2, .productinfo h3, .contactupperleft, .navbar {
+      font-size: 3.2vw;
+   }
+   .productinfo h2, .contactupperleft h2, .intro .introleft h1, .employeeinfo h1 {
+      font-size: 3.4vw;
+   }
+   .products h1, .employees > h1, .contact > h1 {
+      font-size: 3.9vw;
+   }
+   .contactlowerinner form {
+      width: 100%;
+      justify-content: space-between;
+   }
+   .contactlowerinner form input[type="text"] {
+      width: 30%;
+   }
+   .contactlowerinner form input[type="submit"] {
+      background-color: #fff;
+      width: 20%;
+   }
+   .navbar, .employeeblockleft .employeeinner, .employeeblockleft .employeeimg, .contactupperright, .contactlower {
+      box-shadow: none;
+   }
 }

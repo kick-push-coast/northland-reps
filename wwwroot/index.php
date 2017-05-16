@@ -71,7 +71,7 @@
          <!-- <div class="introright">
             <h1>We get your product to the people that need it.</h1>
          </div> -->
-         <div class="introrightnew">
+         <div class="introright">
             <div class="introphotoupper">
                <div class="introphoto">
                   <h1>We get your product to the people that need it.</h1>
@@ -210,7 +210,25 @@
                </div>
             </div>
 
-            <div class="employeeblockright">
+            <div class="employeeblockleft hiddenlg">
+               <div class="employeeinner">
+                  <div class="employeeupper">
+                     <div class="employeeimg">
+                        <img src="../images/headshot2.jpg"/>
+                     </div>
+                     <div class="employeeinfo">
+                        <h1>Kevin Barta</h1>
+                        <h2>Outside Sales</h2>
+                        <h3>Email: <a href="mailto:kevinb@northlandreps.com">kevinb@northlandreps.com</a></h3>
+                     </div>
+                  </div>
+                  <div class="employeelower">
+                     <p class="employeebio">Mauris vulputate, dui et gravida faucibus, velit lectus pretium justo, a consectetur ante est quis neque. Nulla facilisi. Nullam non lectus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam hendrerit pharetra nisl, vel congue est dictum ac. </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="employeeblockright hiddensm">
                <div class="employeeinner">
                   <div class="employeeupper">
                      <div class="employeeinfo">
