@@ -1,8 +1,9 @@
+var belowHeader = 0;
+var windowSize;
+var headerHeight;
+var navbarHeight
+
 $(document).ready(function() {
-   var belowHeader = 0;
-   var windowSize;
-   var headerHeight;
-   var navbarHeight
 
    if ($(window).width() > 992) {
       windowSize = 3;
@@ -17,12 +18,25 @@ $(document).ready(function() {
    $(window).resize(function() {
       if ($(window).width() > 992) {
          windowSize = 3;
+         if (belowHeader == 0) {
+            $('.navbar').css({'fontSize': '1.2vw'});
+         }
+         else if (belowHeader == 1) {
+            $('.navbar').css({'fontSize': '1.6vw'});
+         }
       }
       else if ($(window).width() <= 992 && $(window).width() > 767) {
          windowSize = 2;
+         if (belowHeader == 0) {
+            $('.navbar').css({'fontSize': '1.8vw'});
+         }
+         else if (belowHeader == 1) {
+            $('.navbar').css({'fontSize': '1.4vw'});
+         }
       }
       else if ($(window).width() <= 767) {
          windowSize = 1;
+         $('.navbar').css({'fontSize': '3vw'});
       }
    });
 
@@ -42,8 +56,8 @@ $(document).ready(function() {
             else if (windowSize == 2) {
                $('.navbar').css({'fontSize': '1.8vw'});
             }
-            else if (windowSize == 3) {
-               $('.navbar').css({'fontSize': '2.8vw'});
+            else if (windowSize == 1) {
+               $('.navbar').css({'fontSize': '3vw'});
             }
 
             $('.navbarfill').css({height: navbarHeight});
@@ -62,8 +76,8 @@ $(document).ready(function() {
          else if (windowSize == 2) {
             $('.navbar').css({'fontSize': '1.4vw'});
          }
-         else if (windowSize == 3) {
-            $('.navbar').css({'fontSize': '2.8vw'});
+         else if (windowSize == 1) {
+            $('.navbar').css({'fontSize': '3vw'});
          }
 
          $('.navbarwrap').css({position: "absolute", top:headerHeight});
@@ -98,35 +112,40 @@ function getElementY(query) {
 function doScrolling(element, duration) {
    var navbarHeight = $('.navbar').height();
 	var startingY = window.pageYOffset;
-  var elementY = getElementY(element) - 38.188;
-  // If element is close to page's bottom then window will scroll only to some position above the element.
-  var targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY
+   var elementY = getElementY(element) - 38.188;
+   // If element is close to page's bottom then window will scroll only to some position above the element.
+   var targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY
 	var diff = targetY - startingY
-  // Easing function: easeInOutCubic
-  // From: https://gist.github.com/gre/1650294
-  var easing = function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 }
-  var start
+   // Easing function: easeInOutCubic
+   // From: https://gist.github.com/gre/1650294
+   var easing = function (t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 }
+   var start
 
-  if (!diff) return
+   if (!diff) return
 
-	// Bootstrap our animation - it will get called right before next frame shall be rendered.
-	window.requestAnimationFrame(function step(timestamp) {
-    if (!start) start = timestamp
-    // Elapsed miliseconds since start of scrolling.
-    var time = timestamp - start
-		// Get percent of completion in range [0, 1].
-    var percent = Math.min(time / duration, 1)
-    // Apply the easing.
-    // It can cause bad-looking slow frames in browser performance tool, so be careful.
-    percent = easing(percent)
+   if (windowSize == 1) {
+      window.scrollTo(0, startingY + diff)
+   }
+   else {
+   	// Bootstrap our animation - it will get called right before next frame shall be rendered.
+   	window.requestAnimationFrame(function step(timestamp) {
+          if (!start) start = timestamp
+          // Elapsed miliseconds since start of scrolling.
+          var time = timestamp - start
+      		// Get percent of completion in range [0, 1].
+          var percent = Math.min(time / duration, 1)
+          // Apply the easing.
+          // It can cause bad-looking slow frames in browser performance tool, so be careful.
+          percent = easing(percent)
 
-    window.scrollTo(0, startingY + diff * percent)
+          window.scrollTo(0, startingY + diff * percent)
 
-		// Proceed with animation as long as we wanted it to.
-    if (time < duration) {
-      window.requestAnimationFrame(step)
-    }
-  })
+      		// Proceed with animation as long as we wanted it to.
+          if (time < duration) {
+            window.requestAnimationFrame(step)
+          }
+      })
+   }
 }
 
 // Apply event handlers. Example of firing the scrolling mechanism.

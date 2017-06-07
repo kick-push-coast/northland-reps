@@ -273,8 +273,8 @@ background-color: rgba(124, 105, 98, 1);
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
-   background: url(../images/pipe.svg) no-repeat;
-   background-size: cover;
+   /*background: url(../images/pipe.svg) no-repeat;*/
+   /*background-size: cover;*/
    background-color: rgba(255,255,255,0.4);
    padding: 30px 0;
 }
@@ -657,10 +657,10 @@ background-color: rgba(124, 105, 98, 1);
       transition: none;
    }
    .navbar .navexpand {
-      width: 90px;
+      width: 80px;
    }
    .navlogo .imgexpand {
-      width: 80px;
+      width: 70px;
    }
    .intro .introright {
       display: none;
@@ -699,6 +699,7 @@ background-color: rgba(124, 105, 98, 1);
    .productblocks {
       background: none;
       background-color: rgba(255,255,255,0.4);
+      padding: 10px 0;
    }
    .productinfo {
       flex-grow: 2;
@@ -715,15 +716,15 @@ background-color: rgba(124, 105, 98, 1);
       margin: 0 2% 10px 2%;
    }
    #map, .contactlower {
-      height: 32vw;
+      height: 50vw;
    }
-   .headerinfo, .contactlowerinner textarea, .contactlowerinner form input, .copyright, .employeeinfo h3 {
+   .headerinfo, .contactlowerinner textarea, .contactlowerinner form input, .copyright, .employeeinfo h3, .navbar {
       font-size: 3vw;
    }
    .intro .introleft p, .productinfo ul, .employeebio {
       font-size: 3.1vw;
    }
-   .employeeinfo h2, .productinfo h3, .contactupperleft, .navbar {
+   .employeeinfo h2, .productinfo h3, .contactupperleft {
       font-size: 3.2vw;
    }
    .productinfo h2, .contactupperleft h2, .intro .introleft h1, .employeeinfo h1 {
