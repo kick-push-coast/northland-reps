@@ -26,6 +26,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+
+      <!--No JS Fallback-->
+      <noscript>
+         <style>
+            html{display=block}
+         </style>
+      </noscript>
+
    </head>
    <body>
       <div class="treeblock">
@@ -54,18 +62,22 @@
       </div>
       <div class="intro" id="intro">
          <div class="introleft">
-            <div>
-               <h1>A History of Successful Representation</h1>
-               <p>
-                  Northland Reps was established in the fall of 1992 when the name of Douglas Greig &amp; Associates Company, established in 1960 was changed. Today we still represent companies that have been with us for more than 30 years. Twenty years from now, history will show that Northland Reps continued to represent their manufacturers with knowledge and integrity; these being two major ingredients in any successful rep agency.
-               </p>
+            <div class="intropara">
+               <div>
+                  <h1>A History of Sales Success</h1>
+                  <p>
+                     Northland Reps was established in the fall of 1992 when the name of Douglas Greig &amp; Associates Company, established in 1960 was changed. Today we still represent companies that have been with us for more than 30 years. Twenty years from now, history will show that Northland Reps continued to represent their manufacturers with knowledge and integrity; these being two major ingredients in any successful rep agency.
+                  </p>
+               </div>
             </div>
-            <div>
-               <h1>Our Mission</h1>
-               <p>
+            <div class="intropara">
+               <div>
+                  <h1>Our Mission</h1>
+                  <p>
 
-                  Northland Reps and the manufacturers they represent have one goal in mind: to offer you quality products at a fair price delivered in a timely manner. To accomplish our mission, we strive to provide our customer's the service and support that is essential for guaranteed customer satisfaction.
-               </p>
+                     Northland Reps and the manufacturers they represent have one goal in mind: to offer you quality products at a fair price delivered in a timely manner. To accomplish our mission, we strive to provide our customer's the service and support that is essential for guaranteed customer satisfaction.
+                  </p>
+               </div>
             </div>
          </div>
          <!-- <div class="introright">
@@ -100,91 +112,102 @@
          <h1>Manufacturers &amp; Products</h1>
          <div class="productblocks">
 
-            <div class="productblock">
-               <a href="http://www.rectorseal.com" class="producticon">
-                  <img src="images/producticons/rectorseal.svg"/>
-               </a>
-               <div class="productinfo">
-                  <a href="http://www.rectorseal.com"><h2>Rectorseal</h2></a>
-                  <h3>Houston, TX</h3>
-                  <ul>
-                     <li>Thread Sealants</li>
-                     <li>Chemicals</li>
-                     <li>Solvent Cements</li>
-                     <li>Metacaulk</li>
-                     <li>Nokorode Flux</li>
-                     <li>Aqua Flux</li>
-                     <li>Golden Grip Tools</li>
-                     <li>G-O-N (Glue-On-Nozzle)</li>
-                     <li>Aspen Pumps, Safe-T-Switch</li>
-                     <li>Fortress and Slim Duct Lineset Ducting Systems</li>
-                     <li>Sureseal</li>
-                  </ul>
+            <a href="http://www.rectorseal.com">
+               <div class="productblock">
+                  <div class="producticon">
+                     <img src="images/producticons/rectorseal.svg"/>
+                  </div>
+                  <div class="productinfo">
+                     <h2>Rectorseal</h2>
+                     <h3>Houston, TX</h3>
+                     <ul>
+                        <li>Thread Sealants</li>
+                        <li>Chemicals</li>
+                        <li>Solvent Cements</li>
+                        <li>Metacaulk</li>
+                        <li>Nokorode Flux</li>
+                        <li>Aqua Flux</li>
+                        <li>Golden Grip Tools</li>
+                        <li>G-O-N (Glue-On-Nozzle)</li>
+                        <li>Aspen Pumps, Safe-T-Switch</li>
+                        <li>Fortress and Slim Duct Lineset Ducting Systems</li>
+                        <li>Sureseal</li>
+                     </ul>
+                  </div>
                </div>
-            </div>
+            </a>
 
-            <div class="productblock">
-               <a href="http://www.siouxchief.com" class="producticon">
-                  <img src="images/producticons/siouxchief.svg"/>
-               </a>
-               <div class="productinfo">
-                  <a href="http://www.siouxchief.com"><h2>Sioux Chief</h2></a>
-                  <h3>Peculiar, MO</h3>
-                  <ul>
-                     <li>Finish Line Drainage System</li>
-                     <li>OX Box Power Supply</li>
-                     <li>Strong Arm Bracketing/Support</li>
-                     <li>Residential/Commercial Drainage</li>
-                     <li>Plumbing Specialty Items and Tools</li>
-                  </ul>
+            <a href="http://www.siouxchief.com">
+               <div class="productblock">
+                  <div class="producticon">
+                     <img src="images/producticons/siouxchief.svg"/>
+                  </div>
+                  <div class="productinfo">
+                     <h2>Sioux Chief</h2>
+                     <h3>Peculiar, MO</h3>
+                     <ul>
+                        <li>Finish Line Drainage System</li>
+                        <li>OX Box Power Supply</li>
+                        <li>Strong Arm Bracketing/Support</li>
+                        <li>Residential/Commercial Drainage</li>
+                        <li>Plumbing Specialty Items and Tools</li>
+                     </ul>
+                  </div>
                </div>
-            </div>
+            </a>
 
-            <div class="productblock">
-               <a href="http://www.libertpumps.com" class="producticon">
-                  <img src="images/producticons/libertypumps.svg"/>
-               </a>
-               <div class="productinfo">
-                  <a href="http://www.libertpumps.com"><h2>Liberty Pumps</h2></a>
-                  <h3>Bergen, NY</h3>
-                  <ul>
-                     <li>Submersible Sewage, Effluent, and Sump Pumps</li>
-                     <li>Pre‑assembled Sewage Ejector Systems</li>
-                     <li>Pre‑assembled Grinder Ejector Systems</li>
-                     <li>Custom Engineered EPS Systems</li>
-                     <li>Ascent II Macerating Toilet System</li>
-                  </ul>
+            <a href="http://www.libertpumps.com">
+               <div class="productblock">
+                  <div class="producticon">
+                     <img src="images/producticons/libertypumps.svg"/>
+                  </div>
+                  <div class="productinfo">
+                     <h2>Liberty Pumps</h2>
+                     <h3>Bergen, NY</h3>
+                     <ul>
+                        <li>Submersible Sewage, Effluent, and Sump Pumps</li>
+                        <li>Pre‑assembled Sewage Ejector Systems</li>
+                        <li>Pre‑assembled Grinder Ejector Systems</li>
+                        <li>Custom Engineered EPS Systems</li>
+                        <li>Ascent II Macerating Toilet System</li>
+                     </ul>
+                  </div>
                </div>
-            </div>
+            </a>
 
-            <div class="productblock">
-               <a href="http://www.simmonsmfg.com/" class="producticon">
-                  <img src="images/producticons/simmons.svg"/>
-               </a>
-               <div class="productinfo">
-                  <a href="http://www.simmonsmfg.com/"><h2>Simmons Manufacturing</h2></a>
-                  <h3>McDonough, GA</h3>
-                  <ul>
-                     <li>Well Accessories</li>
-                     <li>Check Valves</li>
-                     <li>Well Seals</li>
-                     <li>Tank Tees</li>
-                  </ul>
+            <a href="http://www.simmonsmfg.com/">
+               <div class="productblock">
+                  <div class="producticon">
+                     <img src="images/producticons/simmons.svg"/>
+                  </div>
+                  <div class="productinfo">
+                     <h2>Simmons Manufacturing</h2>
+                     <h3>McDonough, GA</h3>
+                     <ul>
+                        <li>Well Accessories</li>
+                        <li>Check Valves</li>
+                        <li>Well Seals</li>
+                        <li>Tank Tees</li>
+                     </ul>
+                  </div>
                </div>
-            </div>
+            </a>
 
-            <div class="productblock">
-               <a href="http://www.northernpipe.com/" class="producticon">
-                  <img src="images/producticons/northernpipe.svg"/>
-               </a>
-               <div class="productinfo">
-                  <a href="http://www.northernpipe.com/"><h2>Northern Pipe Products</h2></a>
-                  <h3>Fargo, ND</h3>
-                  <ul>
-                     <li>PVC Pipe for Plumbing, Irrigation, &amp; Well Markets</li>
-                  </ul>
+            <a href="http://www.northernpipe.com/">
+               <div class="productblock">
+                  <div class="producticon">
+                     <img src="images/producticons/northernpipe.svg"/>
+                  </div>
+                  <div class="productinfo">
+                     <h2>Northern Pipe Products</h2>
+                     <h3>Fargo, ND</h3>
+                     <ul>
+                        <li>PVC Pipe for Plumbing, Irrigation, &amp; Well Markets</li>
+                     </ul>
+                  </div>
                </div>
-            </div>
+            </a>
+
          </div>
       </div>
 
@@ -196,7 +219,7 @@
                <div class="employeeinner">
                   <div class="employeeupper">
                      <div class="employeeimg">
-                        <img src="../images/headshot.jpg"/>
+                        <img src="../images/jeffheadshot.png"/>
                      </div>
                      <div class="employeeinfo">
                         <h1>Jeff Tyler</h1>
@@ -214,7 +237,7 @@
                <div class="employeeinner">
                   <div class="employeeupper">
                      <div class="employeeimg">
-                        <img src="../images/headshot2.jpg"/>
+                        <img src="../images/kevinheadshot.png"/>
                      </div>
                      <div class="employeeinfo">
                         <h1>Kevin Barta</h1>
@@ -237,7 +260,7 @@
                         <h3>Email: <a href="mailto:kevinb@northlandreps.com">kevinb@northlandreps.com</a></h3>
                      </div>
                      <div class="employeeimg">
-                        <img src="../images/headshot2.jpg"/>
+                        <img src="../images/kevinheadshot.png"/>
                      </div>
                   </div>
                   <div class="employeelower">
@@ -250,7 +273,7 @@
                <div class="employeeinner">
                   <div class="employeeupper">
                      <div class="employeeimg">
-                        <img src="../images/headshot3.jpg"/>
+                        <img src="../images/cristinaheadshot.png"/>
                      </div>
                      <div class="employeeinfo">
                         <h1>Cristina Zukowski</h1>
@@ -260,6 +283,42 @@
                   </div>
                   <div class="employeelower">
                      <p class="employeebio">Ut urna ante, dignissim eu suscipit eget, facilisis venenatis purus. Nam mi enim, tincidunt id commodo sit amet, dignissim a massa. Phasellus est felis, commodo non lorem mattis, finibus rhoncus nisl. </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="employeeblockleft hiddenlg">
+               <div class="employeeinner">
+                  <div class="employeeupper">
+                     <div class="employeeimg">
+                        <img src="../images/alheadshot.png"/>
+                     </div>
+                     <div class="employeeinfo">
+                        <h1>Kevin Barta</h1>
+                        <h2>Outside Sales</h2>
+                        <h3>Email: <a href="mailto:kevinb@northlandreps.com">kevinb@northlandreps.com</a></h3>
+                     </div>
+                  </div>
+                  <div class="employeelower">
+                     <p class="employeebio">Mauris vulputate, dui et gravida faucibus, velit lectus pretium justo, a consectetur ante est quis neque. Nulla facilisi. Nullam non lectus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam hendrerit pharetra nisl, vel congue est dictum ac. </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="employeeblockright hiddensm">
+               <div class="employeeinner">
+                  <div class="employeeupper">
+                     <div class="employeeinfo">
+                        <h1>Kevin Barta</h1>
+                        <h2>Outside Sales</h2>
+                        <h3>Email: <a href="mailto:kevinb@northlandreps.com">kevinb@northlandreps.com</a></h3>
+                     </div>
+                     <div class="employeeimg">
+                        <img src="../images/alheadshot.png"/>
+                     </div>
+                  </div>
+                  <div class="employeelower">
+                     <p class="employeebio">Mauris vulputate, dui et gravida faucibus, velit lectus pretium justo, a consectetur ante est quis neque. Nulla facilisi. Nullam non lectus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam hendrerit pharetra nisl, vel congue est dictum ac. </p>
                   </div>
                </div>
             </div>
@@ -284,7 +343,7 @@
             <div class="contactlower">
                <div class="contactlowerinner">
                   <textarea name="message" form="contactform" placeholder="Send A Message"></textarea>
-                  <form action="" id="contactform">
+                  <form action="/mail/mailhandle.php" id="contactform" method="post">
                     <input type="text" name="usrname" placeholder="Name">
                     <input type="text" name="usremail" placeholder="Email">
                     <input type="submit" value="Send">
@@ -300,6 +359,6 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script type="text/javascript" src="js/customscripts.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCixrYStmQEAiNMYB131hXajWX8WEYwP2Y&callback=initMap"async defer></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCixrYStmQEAiNMYB131hXajWX8WEYwP2Y" defer></script>
   </body>
 </html>

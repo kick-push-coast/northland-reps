@@ -90,6 +90,34 @@ $(document).ready(function() {
   });
 });
 
+$(window).on("load", function() {
+   $('html').show();
+   initMap();
+   // $('.intro').animate({opacity:1}, {queue:false, duration:600});
+   // $('.products').animate({opacity:1}, {queue:false, duration:600});
+   // $('.employees').animate({opacity:1}, {queue:false, duration:600});
+   // $('.contact').animate({opacity:1}, {queue:false, duration:600});
+   // setTimeout(function(){
+   //    $('.introphoto').removeClass('floatup');
+   //    $('.introphoto').removeClass('floatdown');
+   //    $('.introphotofoldleft').removeClass('floatdown');
+   //    $('.introphotofoldright').removeClass('floatup');
+   //    $('.intropara').removeClass('floatdown');
+   //    $('.intropara').removeClass('floatup');
+   // }, 600)
+
+   if ($(window).width() > 992) {
+      windowSize = 3;
+   }
+   else if ($(window).width() <= 992 && $(window).width() > 767) {
+      windowSize = 2;
+   }
+   else if ($(window).width() <= 767) {
+      windowSize = 1;
+   }
+
+});
+
 function initMap() {
    // Create a map object and specify the DOM element for display.
    var map = new google.maps.Map(document.getElementById('map'), {
