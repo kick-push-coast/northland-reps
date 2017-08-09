@@ -19,29 +19,29 @@ $(document).ready(function() {
       if ($(window).width() > 992) {
          windowSize = 3;
          if (belowHeader == 0) {
-            $('.navbar').css({'fontSize': '1.2vw'});
+            $('.navbar').css({'fontSize': '1rem'});
          }
          else if (belowHeader == 1) {
-            $('.navbar').css({'fontSize': '1.6vw'});
+            $('.navbar').css({'fontSize': '1.2rem'});
          }
       }
       else if ($(window).width() <= 992 && $(window).width() > 767) {
          windowSize = 2;
          if (belowHeader == 0) {
-            $('.navbar').css({'fontSize': '1.8vw'});
+            $('.navbar').css({'fontSize': '1.8rem'});
          }
          else if (belowHeader == 1) {
-            $('.navbar').css({'fontSize': '1.4vw'});
+            $('.navbar').css({'fontSize': '1.4rem'});
          }
       }
       else if ($(window).width() <= 767) {
          windowSize = 1;
-         $('.navbar').css({'fontSize': '3vw'});
+         $('.navbar').css({'fontSize': '3rem'});
       }
    });
 
    $(window).scroll(function () {
-      headerHeight = $('.header').height() + 14;
+      headerHeight = $('.header').height() + 12;
       navbarHeight = $('.navbar').height();
       console.log($(window).scrollTop())
 
@@ -51,13 +51,13 @@ $(document).ready(function() {
             $('.navlogoimg').addClass('imgexpand');
 
             if (windowSize == 3) {
-               $('.navbar').css({'fontSize': '1.6vw'});
+               $('.navbar').css({'fontSize': '1.2rem'});
             }
             else if (windowSize == 2) {
-               $('.navbar').css({'fontSize': '1.8vw'});
+               $('.navbar').css({'fontSize': '1.8rem'});
             }
             else if (windowSize == 1) {
-               $('.navbar').css({'fontSize': '3vw'});
+               $('.navbar').css({'fontSize': '3rem'});
             }
 
             $('.navbarfill').css({height: navbarHeight});
@@ -71,13 +71,13 @@ $(document).ready(function() {
          $('.navlogoimg').removeClass('imgexpand');
 
          if (windowSize == 3) {
-            $('.navbar').css({'fontSize': '1.2vw'});
+            $('.navbar').css({'fontSize': '1rem'});
          }
          else if (windowSize == 2) {
-            $('.navbar').css({'fontSize': '1.4vw'});
+            $('.navbar').css({'fontSize': '1.4rem'});
          }
          else if (windowSize == 1) {
-            $('.navbar').css({'fontSize': '3vw'});
+            $('.navbar').css({'fontSize': '3rem'});
          }
 
          $('.navbarwrap').css({position: "absolute", top:headerHeight});
@@ -122,7 +122,7 @@ function initMap() {
    // Create a map object and specify the DOM element for display.
    var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 45.112347, lng: -93.395466},
-      scrollwheel: true,
+      scrollwheel: false,
       zoom: 17
    });
    var image = '../images/icon.png';
@@ -182,3 +182,4 @@ document.getElementById('aboutanchor').addEventListener('click', doScrolling.bin
 document.getElementById('productsanchor').addEventListener('click', doScrolling.bind(null, '#products', 700))
 document.getElementById('teamanchor').addEventListener('click', doScrolling.bind(null, '#team', 700))
 document.getElementById('contactanchor').addEventListener('click', doScrolling.bind(null, '#contact', 700))
+document.getElementById('associationsanchor').addEventListener('click', doScrolling.bind(null, '#associations', 700))

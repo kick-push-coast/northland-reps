@@ -38,7 +38,7 @@
    <body>
       <div class="treeblock">
       <div class="header" id="header">
-         <img class="headerlogo" id="headerlogo" src="images/headerlogo.svg"/>
+         <img class="headerlogo" id="headerlogo" src="images/headerlogo.png"/>
          <div class="headerinfo">
             <div class="headercontact">
                <p><a href="tel:952-854-3905">Phone: &#40;952&#41; 854-3905</a></p>
@@ -53,29 +53,29 @@
       </div>
       <div class="navbarwrap">
          <div class="navbar">
-            <div class="navlogo" id="headeranchor" tabindex="0"><img class="navlogoimg" src="images/navbarlogo.svg"/></div>
+            <div class="navlogo" id="headeranchor" tabindex="0"><img class="navlogoimg" src="images/navbarlogo.png"/></div>
             <div class="navlinks" id="aboutanchor" tabindex="0"><span>ABOUT</span></div>
-            <div class="navlinks" id="productsanchor" tabindex="0"><span>PRODUCTS</span></div>
+            <div class="navlinks" id="productsanchor" tabindex="0"><span>CLIENTS</span></div>
             <div class="navlinks" id="teamanchor" tabindex="0"><span>TEAM</span></div>
+            <div class="navlinks" id="associationsanchor" tabindex="0"><span>ASSOCIATIONS</span></div>
             <div class="navlinks" id="contactanchor" tabindex="0"><span>CONTACT</span></div>
          </div>
       </div>
       <div class="intro" id="intro">
          <div class="introleft">
             <div class="intropara">
+               <h1>Reliable Representatives</h1>
                <div>
-                  <h1>A History of Sales Success</h1>
                   <p>
-                     Northland Reps was established in the fall of 1992 when the name of Douglas Greig &amp; Associates Company, established in 1960 was changed. Today we still represent companies that have been with us for more than 30 years. Twenty years from now, history will show that Northland Reps continued to represent their manufacturers with knowledge and integrity; these being two major ingredients in any successful rep agency.
+                     Northland Reps provides external sales services with a specialization in piping and plumbing products. We take pride in facilitating long-term business relationships between client companies, customers, and ourselves.
                   </p>
                </div>
             </div>
             <div class="intropara">
+               <h1>A History of Sales Success</h1>
                <div>
-                  <h1>Our Mission</h1>
                   <p>
-
-                     Northland Reps and the manufacturers they represent have one goal in mind: to offer you quality products at a fair price delivered in a timely manner. To accomplish our mission, we strive to provide our customer's the service and support that is essential for guaranteed customer satisfaction.
+                     Northland Reps evolved in 1992 from roots established by Douglas Greig &amp; Associates, a manufacturers rep firm formed in 1960. Many of the manufacturers we currently represent are from the Douglas Greig era and our early days as Northland Reps. We are fortunate to have strong business partnerships that have stood the test of time with manufacturers whose goals align with ours. Northland Reps and the manufacturers they represent are committed to providing our customers with quality products at a fair price delivered in a timely manner.
                   </p>
                </div>
             </div>
@@ -109,7 +109,7 @@
       </div>
 
       <div class="products" id="products">
-         <h1>Manufacturers &amp; Products</h1>
+         <h1>Client Companies &amp; Products</h1>
          <div class="productblocks">
 
             <a href="http://www.rectorseal.com">
@@ -212,7 +212,7 @@
       </div>
 
       <div class="employees" id="team">
-         <h1>Our Team</h1>
+         <h1>Sales Team</h1>
          <div class="employeeblocks">
 
             <div class="employeeblockleft">
@@ -223,48 +223,32 @@
                      </div>
                      <div class="employeeinfo">
                         <h1>Jeff Tyler</h1>
-                        <h2>Outside Sales</h2>
+                        <h2>Owner/Outside Sales</h2>
                         <h3>Email: <a href="mailto:jeffreyt@northlandreps.com">jeffreyt@northlandreps.com</a></h3>
+                        <h3>Phone: <a href="tel:952-854-3905,12">(952) 854-3905, ext 12</a></h3>
                      </div>
                   </div>
                   <div class="employeelower">
-                     <p class="employeebio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sollicitudin ligula rutrum dui malesuada, nec fermentum erat posuere. Donec lectus turpis, iaculis id semper vel, auctor non massa. Quisque sed molestie velit. Fusce efficitur tortor sed nisi varius, ut rhoncus tortor varius. Morbi lobortis dui sed ultricies iaculis. Sed sit amet nunc ante. </p>
+                     <p class="employeebio">Over 30 years in the industry -- Joined Northland Reps in 1989</p>
                   </div>
                </div>
             </div>
 
-            <div class="employeeblockleft hiddenlg">
-               <div class="employeeinner">
-                  <div class="employeeupper">
-                     <div class="employeeimg">
-                        <img src="../images/kevinheadshot.png"/>
-                     </div>
-                     <div class="employeeinfo">
-                        <h1>Kevin Barta</h1>
-                        <h2>Outside Sales</h2>
-                        <h3>Email: <a href="mailto:kevinb@northlandreps.com">kevinb@northlandreps.com</a></h3>
-                     </div>
-                  </div>
-                  <div class="employeelower">
-                     <p class="employeebio">Mauris vulputate, dui et gravida faucibus, velit lectus pretium justo, a consectetur ante est quis neque. Nulla facilisi. Nullam non lectus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam hendrerit pharetra nisl, vel congue est dictum ac. </p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="employeeblockright hiddensm">
+            <div class="employeeblockright">
                <div class="employeeinner">
                   <div class="employeeupper">
                      <div class="employeeinfo">
                         <h1>Kevin Barta</h1>
-                        <h2>Outside Sales</h2>
+                        <h2>Owner/Outside Sales</h2>
                         <h3>Email: <a href="mailto:kevinb@northlandreps.com">kevinb@northlandreps.com</a></h3>
+                        <h3>Phone: <a href="tel:952-854-3905,11">(952) 854-3905, ext 11</a></h3>
                      </div>
                      <div class="employeeimg">
                         <img src="../images/kevinheadshot.png"/>
                      </div>
                   </div>
                   <div class="employeelower">
-                     <p class="employeebio">Mauris vulputate, dui et gravida faucibus, velit lectus pretium justo, a consectetur ante est quis neque. Nulla facilisi. Nullam non lectus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam hendrerit pharetra nisl, vel congue est dictum ac. </p>
+                     <p class="employeebio">Over 25 years in the industry -- Joined Northland Reps in 2013</p>
                   </div>
                </div>
             </div>
@@ -277,48 +261,32 @@
                      </div>
                      <div class="employeeinfo">
                         <h1>Cristina Zukowski</h1>
-                        <h2>Inside Sales</h2>
+                        <h2>Customer Service/Inside Sales</h2>
                         <h3>Email: <a href="mailto:cristinaz@northlandreps.com">cristinaz@northlandreps.com</a></h3>
+                        <h3>Phone: <a href="tel:952-854-3905,10">(952) 854-3905, ext 10</a></h3>
                      </div>
                   </div>
                   <div class="employeelower">
-                     <p class="employeebio">Ut urna ante, dignissim eu suscipit eget, facilisis venenatis purus. Nam mi enim, tincidunt id commodo sit amet, dignissim a massa. Phasellus est felis, commodo non lorem mattis, finibus rhoncus nisl. </p>
+                     <p class="employeebio">Joined Northland Reps in 2013</p>
                   </div>
                </div>
             </div>
 
-            <div class="employeeblockleft hiddenlg">
-               <div class="employeeinner">
-                  <div class="employeeupper">
-                     <div class="employeeimg">
-                        <img src="../images/alheadshot.png"/>
-                     </div>
-                     <div class="employeeinfo">
-                        <h1>Kevin Barta</h1>
-                        <h2>Outside Sales</h2>
-                        <h3>Email: <a href="mailto:kevinb@northlandreps.com">kevinb@northlandreps.com</a></h3>
-                     </div>
-                  </div>
-                  <div class="employeelower">
-                     <p class="employeebio">Mauris vulputate, dui et gravida faucibus, velit lectus pretium justo, a consectetur ante est quis neque. Nulla facilisi. Nullam non lectus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam hendrerit pharetra nisl, vel congue est dictum ac. </p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="employeeblockright hiddensm">
+            <div class="employeeblockright">
                <div class="employeeinner">
                   <div class="employeeupper">
                      <div class="employeeinfo">
-                        <h1>Kevin Barta</h1>
+                        <h1>Al Fracassi</h1>
                         <h2>Outside Sales</h2>
-                        <h3>Email: <a href="mailto:kevinb@northlandreps.com">kevinb@northlandreps.com</a></h3>
+                        <h3>Email: <a href="mailto:alf@northlandreps.com">alf@northlandreps.com</a></h3>
+                        <h3>Phone: <a href="tel:952-854-3905,14">(952) 854-3905, ext 14</a></h3>
                      </div>
                      <div class="employeeimg">
                         <img src="../images/alheadshot.png"/>
                      </div>
                   </div>
                   <div class="employeelower">
-                     <p class="employeebio">Mauris vulputate, dui et gravida faucibus, velit lectus pretium justo, a consectetur ante est quis neque. Nulla facilisi. Nullam non lectus risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam hendrerit pharetra nisl, vel congue est dictum ac. </p>
+                     <p class="employeebio">Over 20 years in the industry -- Joined Northland Reps in 2017</p>
                   </div>
                </div>
             </div>
@@ -327,8 +295,50 @@
 
       </div>
 
+      <div class="associations" id="associations">
+         <h1>Trade Associations</h1>
+         <div class="associationsinner">
+            <a href='http://www.aimr.net/'>
+               <div class="association">
+                  <img src="images/AIMR.png"/>
+                  <p>Association of Independent Manufacturers Representatives</p>
+               </div>
+            </a>
+            <a href='https://www.aspe.org/'>
+               <div class="association">
+                  <img src="images/ASPE.png"/>
+                  <p>Association of Plumbing Engineers</p>
+               </div>
+            </a>
+            <a href='http://www.batc.org/'>
+               <div class="association">
+                  <img src="images/BATC.png"/>
+                  <p >Builders Association of the Twin Cities</p>
+               </div>
+            </a>
+            <a href='http://www.mbex.org/'>
+               <div class="association">
+                  <img src="images/MBEX.png"/>
+                  <p>Minnesota Builders Exchange</p>
+               </div>
+            </a>
+            <a href='http://www.mnphcc.org/'>
+               <div class="association">
+                  <img src="images/PHCC.png"/>
+                  <p>Plumbing Heating &amp; Cooling Contractors</p>
+               </div>
+            </a>
+            <a>
+               <div class="association">
+                  <img src="images/PHCMC.png"/>
+                  <p>Plumbing Heating &amp; Cooling Manufacturers Club</p>
+               </div>
+            </a>
+         </div>
+      </div>
+
       <div class="contact" id="contact">
-         <h1>Contact</h1>
+         <h1>Contact Information</h1>
          <div class="contactinner">
             <div class="contactupper">
                <div class="contactupperleft">

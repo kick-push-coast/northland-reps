@@ -1,6 +1,7 @@
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 a {
@@ -14,17 +15,20 @@ html, body {
 
 html {
    display: none;
+   font-size: 1rem;
 }
 
 body {
-   background-color: #a89b86; /*#c4b79b*/
+   background: url(../images/background.svg) no-repeat;
+   background-size: auto;
+   background-color: #8e8370; /*#c4b79b*/
    margin-left: 0;
    margin-right: 0;
    margin-top: 0;
+   overflow-x: hidden;
 }
 
 .treeblock {
-   background: url(../images/background.svg) no-repeat;
    background-size: auto 100%;
 }
 
@@ -36,9 +40,11 @@ body {
    -webkit-box-align: center;
        -ms-flex-align: center;
            align-items: center;
-   margin: 0 14% 5px 14%;
+   width: 1000px;
+   margin: 0 auto;
    padding-top: 8px;
    border-bottom: 1px solid #000;
+   margin-bottom: 3px;
 }
 
 .headerlogo {
@@ -63,7 +69,7 @@ body {
    display: -ms-flexbox;
    display: flex;
    font-family: 'Roboto', Helvetica;
-   font-size: 1.1vw;
+   font-size: 1rem;
    padding: 0 0 10px 0;
 }
 
@@ -82,24 +88,26 @@ body {
 }
 
 .navbarwrap {
-   padding: 0 14% 0 14%;
+   width: 1000px;
+   margin: 0 auto;
    width: 100%;
    z-index: 1000;
 }
 
 .navbar {
-   width: 100%;
+   width: 1000px;
+   margin: 0 auto;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
    font-family: 'Roboto Slab', Helvetica;
-   font-size: 1.2vw;
+   font-size: 1rem;
    -webkit-transition: font-size 200ms ease;
    -o-transition: font-size 200ms ease;
    transition: font-size 200ms ease;
    background-color: #c4b79b;
-   -webkit-box-shadow: 0px 2px 8px rgba(0,0,0,.5);
-           box-shadow: 0px 2px 8px rgba(0,0,0,.5);
+   -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,.5);
+           box-shadow: 0px 1px 2px rgba(0,0,0,.5);
 }
 
 .navbarfill {
@@ -114,7 +122,7 @@ body {
    -ms-flex-preferred-size: 0;
        flex-basis: 0;
    margin-right: 1px;
-   background-color: rgb(145, 123, 114);
+   background-color: #7c665d;
    min-height: 100%;
    display: -webkit-box;
    display: -ms-flexbox;
@@ -130,7 +138,7 @@ body {
 }
 
 .navbar .navlinks:hover {
-   background-color: rgba(124, 105, 98, 1);
+   background-color: #6d564b;
 }
 
 .navbar .navlinks span {
@@ -154,13 +162,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgb(145, 123, 114);
+  background-color: #7c665d;
   cursor: pointer;
   outline: none;
 }
 
 .navbar .navlogo:hover {
-background-color: rgba(124, 105, 98, 1);
+background-color: #6d564b;
 }
 
 .navbar .navexpand {
@@ -182,8 +190,10 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .intro {
-   margin: 35px 0 0 0;
-   padding-bottom: 5vw;
+   width: 1000px;
+   margin: 0 auto;
+   margin-top: 35px;
+   padding-bottom: 5rem;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -191,8 +201,7 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .intro .introleft {
-   width: 50%;
-   padding-left: 14%;
+   width: 47%;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -200,6 +209,7 @@ background-color: rgba(124, 105, 98, 1);
    -webkit-box-direction: normal;
        -ms-flex-direction: column;
            flex-direction: column;
+   justify-content: space-around;
    color: #3a3a3a;
 }
 
@@ -210,11 +220,8 @@ background-color: rgba(124, 105, 98, 1);
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
-   transition: -webkit-transform .5s ease-in;
-   -webkit-transition: -webkit-transform .5s ease-in;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .intropara div {
@@ -223,7 +230,7 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .intro .introleft p {
-   font-size: 1.1vw;
+   font-size: 1rem;
    word-spacing: 0.2em;
    font-family: 'Lato', Helvetica;
    text-align: left;
@@ -231,29 +238,30 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .intro .introleft h1 {
-   font-size: 2vw;
+   font-size: 1.6rem;
    color: #000;
    word-spacing: 0.2em;
    font-family: 'Lato', Helvetica;
    padding-bottom: 8px;
    margin: 0;
+   text-align: center;
 }
 
 .introphoto h1 {
    position: absolute;
    top: 41%;
    left: 0;
-   padding-left: 20%;
+   padding-left: 18%;
    text-align: center;
    width: 100%;
    font-family: 'Raleway', Helvetica;
-   font-size: 1.4vw;
+   font-size: 1.2rem;
    background-color: rgba(0,0,0,0.8);
    color: #fff;
 }
 
 .introphoto h1:first-letter {
-   font-size: 2.5vw;
+   font-size: 2rem;
    vertical-align: sub;
 }
 
@@ -265,11 +273,13 @@ background-color: rgba(124, 105, 98, 1);
    -webkit-box-pack: center;
        -ms-flex-pack: center;
            justify-content: center;
-   -webkit-box-flex: 1;
+   /*-webkit-box-flex: 1;
        -ms-flex-positive: 1;
-           flex-grow: 1;
-   width: 50%;
-   padding: 0 2%;
+           flex-grow: 1;*/
+   position: relative;
+   flex-grow: 1;
+   padding-left: 30px;
+   margin-right: -90px;
 }
 
 .introphotoupper .introphoto {
@@ -290,7 +300,7 @@ background-color: rgba(124, 105, 98, 1);
    -webkit-box-flex: 1;
        -ms-flex-positive: 1;
            flex-grow: 1;
-   width: 20%;
+   width: 18%;
    background-color: #444c42;
 }
 
@@ -302,8 +312,8 @@ background-color: rgba(124, 105, 98, 1);
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
-   -webkit-box-shadow: -7px 5px 15px rgba(0,0,0,.9);
-           box-shadow: -7px 5px 15px rgba(0,0,0,.9);
+   -webkit-box-shadow: -4px 4px 6px rgba(0,0,0,.7);
+           box-shadow: -4px 4px 6px rgba(0,0,0,.7);
    position: relative;
    transition: -webkit-transform .5s ease-in;
    -webkit-transition: -webkit-transform .5s ease-in;
@@ -327,7 +337,7 @@ background-color: rgba(124, 105, 98, 1);
            flex-grow: 1;
    -ms-flex-item-align: center;
        align-self: center;
-   width: 80%;
+   width: 82%;
    max-height: 100%;
 }
 
@@ -352,16 +362,17 @@ background-color: rgba(124, 105, 98, 1);
 
 
 .products {
-   margin: 0 14%;
-
+   width: 1000px;
+   margin: 0 auto;
 }
 
-.products h1, .employees > h1, .contact > h1 {
+.products h1, .employees > h1, .contact > h1, .associations h1 {
    display: block;
    text-align: center;
-   margin: 0 0 6px 0;
+   margin: 0;
+   padding: 5px 0;
    font-family: 'Lato', Helvetica;
-   font-size: 2.8vw;
+   font-size: 2.4rem;
 }
 
 .productblocks {
@@ -374,8 +385,6 @@ background-color: rgba(124, 105, 98, 1);
            justify-content: space-between;
    -ms-flex-wrap: wrap;
        flex-wrap: wrap;
-   /*background: url(../images/pipe.svg) no-repeat;*/
-   /*background-size: cover;*/
    background-color: rgba(255,255,255,0.3);
 }
 
@@ -434,17 +443,17 @@ background-color: rgba(124, 105, 98, 1);
 
 .productinfo h2 {
    border-bottom: 1px solid #000;
-   font-size: 1.4vw;
+   font-size: 1.3rem;
    margin: 10px 0;
 }
 
 .productinfo h3{
-   font-size: 1.1vw;
+   font-size: 1.1rem;
    margin-top: 0;
 }
 
 .productinfo ul {
-   font-size: 1vw;
+   font-size: 0.9rem;
 }
 
 .productinfo h3 span {
@@ -456,18 +465,17 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .employees {
-   margin: 60px 0 0 0;
-   width: 100%;
-
+   width: 1000px;
+   margin: 0 auto;
+   margin-top: 60px;
 }
 
 .employeeblocks {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
-   margin: 0 14%;
-   margin-left: calc(14% - 76px);
-   margin-right: calc(14% - 76px);
+   width: 100%;
+   margin: 0 auto;
    -webkit-box-pack: justify;
        -ms-flex-pack: justify;
            justify-content: space-between;
@@ -477,51 +485,43 @@ background-color: rgba(124, 105, 98, 1);
 
 .employeeblockleft {
    width: 49%;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
    margin-top: 10px;
-   background: url("../images/foldbackground.svg") no-repeat;
+   /*background: url("../images/foldbackground.png") no-repeat;*/
    background-position: left bottom;
 }
 
 .employeeblockright {
    width: 49%;
-   margin-bottom: 30px;
+   margin-bottom: 20px;
    margin-top: 10px;
-   background: url("../images/foldbackgroundright.svg") no-repeat;
+   /*background: url("../images/foldbackgroundright.png") no-repeat;*/
    background-position: right bottom;
 }
 
 
 .employeeblockleft .employeeinner {
-   width: calc(100% - 76px);
-   margin-left: 76px;
-   padding-bottom: 10px;
-   background: url(../images/backgroundright.svg) no-repeat;
-   background-position: right;
-   background-size: contain;
+   width: 100%;
+   padding-bottom: 20px;
    background-color: rgba(255, 255, 255, 0.4);
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
        -ms-flex-direction: column;
            flex-direction: column;
-   -webkit-box-shadow: -4px 4px 10px rgba(0,0,0,.7);
-           box-shadow: -4px 4px 10px rgba(0,0,0,.7);
+   /*-webkit-box-shadow: -2px 2px 4px rgba(0,0,0,.7);
+           box-shadow: -2px 2px 4px rgba(0,0,0,.7);*/
 }
 
 .employeeblockright .employeeinner {
-   width: calc(100% - 76px);
-   margin-right: 76px;
-   padding-bottom: 10px;
-   background: url(../images/backgroundleft.svg) no-repeat;
-   background-position: left;
-   background-size: contain;
+   width: 100%;
+   padding-bottom: 20px;
    background-color: rgba(255, 255, 255, 0.4);
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
        -ms-flex-direction: column;
            flex-direction: column;
-   -webkit-box-shadow: 4px 4px 10px rgba(0,0,0,.7);
-           box-shadow: 4px 4px 10px rgba(0,0,0,.7);
+   /*-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,.7);
+           box-shadow: 2px 2px 4px rgba(0,0,0,.7);*/
 }
 
 .employeeupper {
@@ -534,7 +534,7 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .employeelower {
-   height: 125px;
+   height: 50px;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -545,13 +545,13 @@ background-color: rgba(124, 105, 98, 1);
    -webkit-box-pack: center;
        -ms-flex-pack: center;
            justify-content: center;
-   border: 1px solid #000;
-   margin: 10px 10px 0 10px;
+   background-color: rgba(142, 131, 112, .4);
+   margin: 20px 20px 0 20px;
    flex-direction: column;
 }
 
 .employeeinfo {
-   padding: 10px;
+   padding: 0 10px;
    -webkit-box-flex: 1;
        -ms-flex-positive: 1;
            flex-grow: 1;
@@ -574,16 +574,16 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .employeeinfo h1 {
-   font-size: 1.8vw;
+   font-size: 1.3rem;
    border-bottom: 1px solid #000;
 }
 
 .employeeinfo h2 {
-   font-size: 1.1vw;
+   font-size: 1.1rem;
 }
 
 .employeeinfo h3 {
-   font-size: 1vw;
+   font-size: 0.9rem;
 }
 
 .employeeinfo h3 a:hover {
@@ -591,9 +591,9 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .employeebio {
-   margin: 20px;
+   text-align: center;
    font-family: Helvetica;
-   font-size: 1vw;
+   font-size: 0.9rem;
 }
 
 .employeeblockright .employeeinfo {
@@ -604,11 +604,11 @@ background-color: rgba(124, 105, 98, 1);
    width: 45%;
    height: auto;
    margin-top: -10px;
-   margin-left: -64px;
-   padding: 2%;
+   margin-left: -10px;
+   padding: 10px;
    background-color: #444c41;
-   -webkit-box-shadow: -7px 5px 15px rgba(0,0,0,.9);
-           box-shadow: -7px 5px 15px rgba(0,0,0,.9);
+   -webkit-box-shadow: -2px 2px 6px rgba(0,0,0,.7);
+           box-shadow: -2px 2px 6px rgba(0,0,0,.7);
    text-align: center;
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
@@ -626,11 +626,11 @@ background-color: rgba(124, 105, 98, 1);
    width: 45%;
    height: auto;
    margin-top: -10px;
-   margin-right: -64px;
-   padding: 2%;
+   margin-right: -10px;
+   padding: 10px;
    background-color: #444c41;
-   -webkit-box-shadow: 7px 5px 15px rgba(0,0,0,.9);
-           box-shadow: 7px 5px 15px rgba(0,0,0,.9);
+   -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,.7);
+           box-shadow: 2px 2px 6px rgba(0,0,0,.7);
    text-align: center;
    -webkit-box-orient: vertical;
    -webkit-box-direction: normal;
@@ -655,13 +655,63 @@ background-color: rgba(124, 105, 98, 1);
    background: linear-gradient(#8c8a8a,#e5e5e5);
 }
 
-.hiddenlg {
-   display: none;
+.associations {
+   width: 1000px;
+   margin: 0 auto;
+   margin-top: 60px;
+}
+
+.associationsinner {
+   width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   background-color: rgba(255,255,255,0.3);
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+}
+
+.associationsinner a {
+   width: 33%;
+   padding: 20px 0;
+   -webkit-transition: background-color .3s ease;
+   -o-transition: background-color .3s ease;
+   transition: background-color .3s ease;
+}
+
+.association {
+   width: 100%;
+}
+
+.associationsinner a:hover {
+   background-color: rgba(255,255,255,0.4);
+}
+
+.association img {
+   width: 100%;
+   height: auto;
+   padding: 0 5rem;
+}
+
+.association p {
+   text-align: center;
+   font-family: 'Lato', Helvetica;
+   font-size: 1.1rem;
+   padding: 0 2rem;
+   margin-bottom: 0;
+}
+
+.associationsinner a:nth-child(3) .association p {
+   padding: 0 4rem;
 }
 
 .contact {
-   margin-top: 30px;
-
+   width: 1000px;
+   margin: 0 auto;
+   margin-top: 60px;
 }
 
 .contactinner {
@@ -672,13 +722,13 @@ background-color: rgba(124, 105, 98, 1);
    -webkit-box-direction: normal;
        -ms-flex-direction: column;
            flex-direction: column;
-   margin: 20px 14% 55px 14%;
+   margin: 10px 0 35px 0;
    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .contactupper {
    width: 100%;
-   height: 24vw;
+   height: 22rem;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -699,9 +749,8 @@ background-color: rgba(124, 105, 98, 1);
        justify-content: space-around;
    text-align: center;
    font-family: 'Lato', Helvetica;
-   font-size: 1.2vw;
+   font-size: 1.2rem;
    padding-top: 3%;
-   background: url(../images/paperairplane.svg) no-repeat;
    background-position: left;
    background-size: contain;
 }
@@ -713,7 +762,7 @@ background-color: rgba(124, 105, 98, 1);
 }
 
 .contactupperleft h2 {
-   font-size: 1.3vw;
+   font-size: 1.3rem;
    margin: 0 5% 10px 5%;
    border-bottom: 1px solid rgba(0,0,0,.5);
    text-align: left;
@@ -732,24 +781,24 @@ background-color: rgba(124, 105, 98, 1);
        -ms-flex-positive: 2;
            flex-grow: 2;
    height: 100%;
-   padding: 1vw;
+   padding: 10px;
    background-color: #2e3f45;
-   margin: -15px -30px 0 0;
-   -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.9);
-           box-shadow: 0px 5px 15px rgba(0,0,0,.9);
+   margin: -10px -10px 0 0;
+   -webkit-box-shadow: 0px 2px 6px rgba(0,0,0,.7);
+           box-shadow: 0px 2px 6px rgba(0,0,0,.7);
 }
 
 #map {
-   height: 22vw;
+   height: 100%;
 }
 
 .contactlower {
-   height: 20vw;
-   width: calc(100% + 60px);
+   height: 18.5rem;
+   width: 1020px;
    background-color: #2e3f45;
-   -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,.9);
-           box-shadow: 0px 5px 15px rgba(0,0,0,.9);
-   margin: 0 0 -30px -30px;
+   -webkit-box-shadow: 0px 2px 6px rgba(0,0,0,.7);
+           box-shadow: 0px 2px 6px rgba(0,0,0,.7);
+   margin: 0 0 -10px -10px;
 }
 
 .contactlowerinner {
@@ -771,8 +820,8 @@ background-color: rgba(124, 105, 98, 1);
            flex-grow: 1;
    width: 100%;
    resize: none;
-   font-size: 1vw;
-   background-color: #c7c8c9;
+   font-size: 1rem;
+   background-color: #d6d3cc;
    outline: none;
 }
 
@@ -793,25 +842,46 @@ background-color: rgba(124, 105, 98, 1);
        -ms-flex-positive: 1;
            flex-grow: 1;
    margin: 0 5px;
-   font-size: 0.9vw;
+   font-size: 0.9rem;
 }
 
 .contactlowerinner form input[type="text"] {
-   background-color: #c7c8c9;
+   background-color: #d6d3cc;
    outline: none;
 }
 
 .copyright {
    width: 100%;
    text-align: center;
-   font-size: 0.9vw;
+   font-size: 0.8rem;
 }
 
 
+@media only screen and (max-width: 1210px) {
+   html {
+      font-size: .9rem;
+   }
+   .intro .introright {
+      margin-right: 0;
+   }
+   body {
+      background: none;
+      background-color: #8e8370;
+   }
+   .treeblock {
+      background: url(../images/background.svg) no-repeat;
+      background-size: auto 100%;
+   }
+   .contactupper {
+      height: 24.5rem;
+   }
+   .contactlower {
+      height: 20rem;
+   }
+}
 
 
-
-@media only screen and (max-width: 992px) {
+/*@media only screen and (max-width: 992px) {
 
    .header, .products, .employeeblocks, .contactinner {
       margin-left: 2%;
@@ -980,4 +1050,4 @@ background-color: rgba(124, 105, 98, 1);
       -webkit-box-shadow: none;
               box-shadow: none;
    }
-}
+}*/
