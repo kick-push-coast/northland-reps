@@ -325,13 +325,13 @@
             <a href='http://www.mnphcc.org/'>
                <div class="association">
                   <img src="images/PHCC.png"/>
-                  <p>Plumbing Heating &amp; Cooling Contractors</p>
+                  <p>Plumbing Heating Cooling Contractors</p>
                </div>
             </a>
             <a>
                <div class="association">
                   <img src="images/PHCMC.png"/>
-                  <p>Plumbing Heating &amp; Cooling Manufacturers Club</p>
+                  <p>Plumbing Heating Cooling Manufacturers Club</p>
                </div>
             </a>
          </div>
