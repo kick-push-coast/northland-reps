@@ -67,7 +67,7 @@
                <h1>Reliable Representatives</h1>
                <div>
                   <p>
-                     Northland Reps provides external sales services with a specialization in piping and plumbing products. We take pride in facilitating long-term business relationships between client companies, customers, and ourselves.
+                     Northland Reps provides external sales services with a specialization in piping and plumbing products. We take pride in facilitating long-term business relationships with client companies and customers.
                   </p>
                </div>
             </div>
@@ -112,6 +112,47 @@
          <h1>Client Companies &amp; Products</h1>
          <div class="productblocks">
 
+            <a href="http://www.libertypumps.com">
+               <div class="productblock">
+                  <div class="producticon">
+                     <img src="images/producticons/libertypumps.svg"/>
+                  </div>
+                  <div class="productinfo">
+                     <h2>Liberty Pumps</h2>
+                     <h3>Bergen, NY</h3>
+                     <ul>
+                        <li>Submersible Sewage, Effluent, and Sump Pumps</li>
+                        <li>Pre‑assembled Sewage Ejector Systems</li>
+                        <li>Pre‑assembled Grinder Ejector Systems</li>
+                        <li>Custom Engineered EPS Systems</li>
+                        <li>Ascent II Macerating Toilet System</li>
+                        <li>Explosion Proof Pumps</li>
+                        <li>Backup Sump Pumps</li>
+                     </ul>
+                  </div>
+               </div>
+            </a>
+
+            <a href="http://www.siouxchief.com">
+               <div class="productblock">
+                  <div class="producticon">
+                     <img src="images/producticons/siouxchief.svg"/>
+                  </div>
+                  <div class="productinfo">
+                     <h2>Sioux Chief</h2>
+                     <h3>Peculiar, MO</h3>
+                     <ul>
+                        <li>Finish Line Drainage System</li>
+                        <li>OX Box Power Supply</li>
+                        <li>Strong Arm Bracketing/Support</li>
+                        <li>Residential/Commercial Drainage</li>
+                        <li>Plumbing Specialty Items and Tools</li>
+                        <li>PowerPEX PEX Tube and Fittings</li>
+                     </ul>
+                  </div>
+               </div>
+            </a>
+
             <a href="http://www.rectorseal.com">
                <div class="productblock">
                   <div class="producticon">
@@ -132,44 +173,6 @@
                         <li>Aspen Pumps, Safe-T-Switch</li>
                         <li>Fortress and Slim Duct Lineset Ducting Systems</li>
                         <li>Sureseal</li>
-                     </ul>
-                  </div>
-               </div>
-            </a>
-
-            <a href="http://www.siouxchief.com">
-               <div class="productblock">
-                  <div class="producticon">
-                     <img src="images/producticons/siouxchief.svg"/>
-                  </div>
-                  <div class="productinfo">
-                     <h2>Sioux Chief</h2>
-                     <h3>Peculiar, MO</h3>
-                     <ul>
-                        <li>Finish Line Drainage System</li>
-                        <li>OX Box Power Supply</li>
-                        <li>Strong Arm Bracketing/Support</li>
-                        <li>Residential/Commercial Drainage</li>
-                        <li>Plumbing Specialty Items and Tools</li>
-                     </ul>
-                  </div>
-               </div>
-            </a>
-
-            <a href="http://www.libertpumps.com">
-               <div class="productblock">
-                  <div class="producticon">
-                     <img src="images/producticons/libertypumps.svg"/>
-                  </div>
-                  <div class="productinfo">
-                     <h2>Liberty Pumps</h2>
-                     <h3>Bergen, NY</h3>
-                     <ul>
-                        <li>Submersible Sewage, Effluent, and Sump Pumps</li>
-                        <li>Pre‑assembled Sewage Ejector Systems</li>
-                        <li>Pre‑assembled Grinder Ejector Systems</li>
-                        <li>Custom Engineered EPS Systems</li>
-                        <li>Ascent II Macerating Toilet System</li>
                      </ul>
                   </div>
                </div>
@@ -203,6 +206,21 @@
                      <h3>Fargo, ND</h3>
                      <ul>
                         <li>PVC Pipe for Plumbing, Irrigation, &amp; Well Markets</li>
+                     </ul>
+                  </div>
+               </div>
+            </a>
+
+            <a href="http://www.tru-gap.com">
+               <div class="productblock">
+                  <div class="producticon">
+                     <img src="images/producticons/trugap.svg"/>
+                  </div>
+                  <div class="productinfo">
+                     <h2>Tru-Gap</h2>
+                     <h3>North Saint Paul, MN</h3>
+                     <ul>
+                        <li>Air Gap Fixtures</li>
                      </ul>
                   </div>
                </div>
