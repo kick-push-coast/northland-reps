@@ -28,15 +28,15 @@ $(document).ready(function() {
       else if ($(window).width() <= 992 && $(window).width() > 767) {
          windowSize = 2;
          if (belowHeader == 0) {
-            $('.navbar').css({'fontSize': '1.8rem'});
+            $('.navbar').css({'fontSize': '1.1rem'});
          }
          else if (belowHeader == 1) {
-            $('.navbar').css({'fontSize': '1.4rem'});
+            $('.navbar').css({'fontSize': '1.2rem'});
          }
       }
       else if ($(window).width() <= 767) {
          windowSize = 1;
-         $('.navbar').css({'fontSize': '3rem'});
+         $('.navbar').css({'fontSize': '0.8rem'});
       }
    });
 
@@ -54,10 +54,10 @@ $(document).ready(function() {
                $('.navbar').css({'fontSize': '1.2rem'});
             }
             else if (windowSize == 2) {
-               $('.navbar').css({'fontSize': '1.8rem'});
+               $('.navbar').css({'fontSize': '1.2rem'});
             }
             else if (windowSize == 1) {
-               $('.navbar').css({'fontSize': '3rem'});
+               $('.navbar').css({'fontSize': '0.8rem'});
             }
 
             $('.navbarfill').css({height: navbarHeight});
@@ -74,10 +74,10 @@ $(document).ready(function() {
             $('.navbar').css({'fontSize': '1rem'});
          }
          else if (windowSize == 2) {
-            $('.navbar').css({'fontSize': '1.4rem'});
+            $('.navbar').css({'fontSize': '1.1rem'});
          }
          else if (windowSize == 1) {
-            $('.navbar').css({'fontSize': '3rem'});
+            $('.navbar').css({'fontSize': '0.8rem'});
          }
 
          $('.navbarwrap').css({position: "absolute", top:headerHeight});
