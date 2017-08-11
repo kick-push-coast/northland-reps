@@ -19,7 +19,7 @@ html {
 }
 
 body {
-   background: url('../images/background.svg') no-repeat;
+   background: url('../images/backgroundtree.png') no-repeat;
    background-size: auto;
    background-color: #8e8370;
    /*#c4b79b*/
@@ -856,7 +856,7 @@ body {
       background-color: #8e8370;
    }
    .treeblock {
-      background: url('../images/background.svg') no-repeat;
+      background: url('../images/backgroundtree.png') no-repeat;
       background-size: auto 100%;
    }
    .contactupper {
