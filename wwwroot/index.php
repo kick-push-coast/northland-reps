@@ -8,7 +8,7 @@
 
       <title>Northland Reps | Sales firm representing plumbing manufacturers throughout the Midwest</title>
 
-      <link href="css/customstyles.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
 
       <link rel="icon" href="images/icon.png">
 
@@ -38,7 +38,9 @@
    <body>
       <div class="treeblock">
       <div class="header" id="header">
-         <img class="headerlogo" id="headerlogo" src="images/headerlogo.png"/>
+         <a href='/' class="headerlogo" id="headerlogo">
+            <img src="images/headerlogo.png"/>
+         </a>
          <div class="headerinfo">
             <div class="headercontact">
                <p><a href="tel:952-854-3905">Phone: &#40;952&#41; 854-3905</a></p>
@@ -86,7 +88,7 @@
          <div class="introright">
             <div class="introphotoupper">
                <div class="introphoto">
-                  <h1>We get your product to the people that need it.</h1>
+                  <h1>Get your product to the people that need it</h1>
                   <div class="introphotospace">
                   </div>
                   <img src="images/tubes.jpg"/>
@@ -205,7 +207,7 @@
                      <h2>Northern Pipe Products</h2>
                      <h3>Fargo, ND</h3>
                      <ul>
-                        <li>PVC Pipe for Plumbing, Irrigation, &amp; Well Markets</li>
+                        <li>PVC Pipe for Plumbing, Irrigation, and Well Markets</li>
                      </ul>
                   </div>
                </div>
@@ -318,37 +320,37 @@
          <div class="associationsinner">
             <a href='http://www.aimr.net/'>
                <div class="association">
-                  <img src="images/AIMR.png"/>
+                  <img src="images/associationsicons/AIMR.png"/>
                   <p>Association of Independent Manufacturers Representatives</p>
                </div>
             </a>
             <a href='https://www.aspe.org/'>
                <div class="association">
-                  <img src="images/ASPE.png"/>
+                  <img src="images/associationsicons/ASPE.png"/>
                   <p>Association of Plumbing Engineers</p>
                </div>
             </a>
             <a href='http://www.batc.org/'>
                <div class="association">
-                  <img src="images/BATC.png"/>
+                  <img src="images/associationsicons/BATC.png"/>
                   <p >Builders Association of the Twin Cities</p>
                </div>
             </a>
             <a href='http://www.mbex.org/'>
                <div class="association">
-                  <img src="images/MBEX.png"/>
+                  <img src="images/associationsicons/MBEX.png"/>
                   <p>Minnesota Builders Exchange</p>
                </div>
             </a>
             <a href='http://www.mnphcc.org/'>
                <div class="association">
-                  <img src="images/PHCC.png"/>
+                  <img src="images/associationsicons/PHCC.png"/>
                   <p>Plumbing Heating Cooling Contractors</p>
                </div>
             </a>
             <a>
                <div class="association">
-                  <img src="images/PHCMC.png"/>
+                  <img src="images/associationsicons/PHCMC.png"/>
                   <p>Plumbing Heating Cooling Manufacturers Club</p>
                </div>
             </a>
@@ -370,10 +372,11 @@
             </div>
             <div class="contactlower">
                <div class="contactlowerinner">
-                  <textarea name="message" form="contactform" placeholder="Send A Message"></textarea>
+                  <textarea name="message" form="contactform" placeholder="Send A Message" required></textarea>
                   <form action="/mail/mailhandle.php" id="contactform" method="post">
-                    <input type="text" name="usrname" placeholder="Name">
-                    <input type="text" name="usremail" placeholder="Email">
+                    <input type="text" name="usrname" placeholder="Name" required>
+                    <input type="text" name="usremail" placeholder="Email" required>
+                    <input type="text" name="hp" class="formhp" value="check">
                     <input type="submit" value="Send">
                   </form>
                </div>
@@ -386,7 +389,7 @@
       echo strftime("%Y"); ?> Northland Reps Inc.</div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script type="text/javascript" src="js/customscripts.js"></script>
+      <script type="text/javascript" src="js/scripts.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCixrYStmQEAiNMYB131hXajWX8WEYwP2Y" defer></script>
   </body>
 </html>
