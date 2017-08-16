@@ -117,7 +117,7 @@
             <a href="http://www.libertypumps.com">
                <div class="productblock">
                   <div class="producticon">
-                     <img src="images/producticons/libertypumps.svg"/>
+                     <img src="images/producticons/libertypumps.png"/>
                   </div>
                   <div class="productinfo">
                      <h2>Liberty Pumps</h2>
@@ -138,7 +138,7 @@
             <a href="http://www.siouxchief.com">
                <div class="productblock">
                   <div class="producticon">
-                     <img src="images/producticons/siouxchief.svg"/>
+                     <img src="images/producticons/siouxchief.png"/>
                   </div>
                   <div class="productinfo">
                      <h2>Sioux Chief</h2>
@@ -158,7 +158,7 @@
             <a href="http://www.rectorseal.com">
                <div class="productblock">
                   <div class="producticon">
-                     <img src="images/producticons/rectorseal.svg"/>
+                     <img src="images/producticons/rectorseal.png"/>
                   </div>
                   <div class="productinfo">
                      <h2>Rectorseal</h2>
@@ -183,7 +183,7 @@
             <a href="http://www.simmonsmfg.com/">
                <div class="productblock">
                   <div class="producticon">
-                     <img src="images/producticons/simmons.svg"/>
+                     <img src="images/producticons/simmons.png"/>
                   </div>
                   <div class="productinfo">
                      <h2>Simmons Manufacturing</h2>
@@ -201,7 +201,7 @@
             <a href="http://www.northernpipe.com/">
                <div class="productblock">
                   <div class="producticon">
-                     <img src="images/producticons/northernpipe.svg"/>
+                     <img src="images/producticons/northernpipe.png"/>
                   </div>
                   <div class="productinfo">
                      <h2>Northern Pipe Products</h2>
@@ -216,7 +216,7 @@
             <a href="http://www.tru-gap.com">
                <div class="productblock">
                   <div class="producticon">
-                     <img src="images/producticons/trugap.svg"/>
+                     <img src="images/producticons/trugap.png"/>
                   </div>
                   <div class="productinfo">
                      <h2>Tru-Gap</h2>
@@ -239,7 +239,7 @@
                <div class="employeeinner">
                   <div class="employeeupper">
                      <div class="employeeimg">
-                        <img src="../images/jeffheadshot.png"/>
+                        <img src="images/jeffheadshot.png"/>
                      </div>
                      <div class="employeeinfo">
                         <h1>Jeff Tyler</h1>
@@ -264,7 +264,7 @@
                         <h3>Phone: <a href="tel:952-854-3905,11">(952) 854-3905, ext 11</a></h3>
                      </div>
                      <div class="employeeimg">
-                        <img src="../images/kevinheadshot.png"/>
+                        <img src="images/kevinheadshot.png"/>
                      </div>
                   </div>
                   <div class="employeelower">
@@ -277,7 +277,7 @@
                <div class="employeeinner">
                   <div class="employeeupper">
                      <div class="employeeimg">
-                        <img src="../images/cristinaheadshot.png"/>
+                        <img src="images/cristinaheadshot.png"/>
                      </div>
                      <div class="employeeinfo">
                         <h1>Cristina Zukowski</h1>
@@ -302,7 +302,7 @@
                         <h3>Phone: <a href="tel:952-854-3905,14">(952) 854-3905, ext 14</a></h3>
                      </div>
                      <div class="employeeimg">
-                        <img src="../images/alheadshot.png"/>
+                        <img src="images/alheadshot.png"/>
                      </div>
                   </div>
                   <div class="employeelower">
@@ -373,7 +373,7 @@
             <div class="contactlower">
                <div class="contactlowerinner">
                   <textarea name="message" form="contactform" placeholder="Send A Message" required></textarea>
-                  <form action="/mail/mailhandle.php" id="contactform" method="post">
+                  <form action="mail/mailhandle.php" id="contactform" method="post">
                     <input type="text" name="usrname" placeholder="Name" required>
                     <input type="text" name="usremail" placeholder="Email" required>
                     <input type="text" name="hp" class="formhp" value="check">

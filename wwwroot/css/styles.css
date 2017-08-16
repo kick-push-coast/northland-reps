@@ -912,14 +912,16 @@ body {
    .producticon {
       flex-basis: auto;
       width: 100%;
-      padding: 0 110px;
+      text-align: center;
       height: 132px;
       display: flex;
       flex-direction: column;
       justify-content: center;
    }
    .producticon img {
-      margin: 0;
+      width: calc(100% - 220px);
+      margin: 0 auto;
+      height: auto;
    }
    .productinfo {
       flex-basis: auto;
@@ -1002,6 +1004,7 @@ body {
       height: auto;
    }
    .producticon img {
+      width: 100%;
       height: auto;
    }
    .productinfo {

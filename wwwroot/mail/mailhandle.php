@@ -12,7 +12,7 @@
        header("Location: ../"); exit;
    }
 
-   $toAdd = 'mktyler01@gmail.com';
+   $toAdd = 'cristinaz@northlandreps.com';
    $fromAdd = $_POST['usremail'];
    $fromName = $_POST['usrname'];
    $subject = 'New message from ' . $fromName . ' ' . $fromAdd . ' - Sent from the Northland Reps website';

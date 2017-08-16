@@ -122,8 +122,7 @@ function initMap() {
    var image = '../images/icon.png';
    var beachMarker = new google.maps.Marker({
       position: {lat: 45.112347, lng: -93.395466},
-      map: map,
-      icon: image
+      map: map
    });
 }
 
