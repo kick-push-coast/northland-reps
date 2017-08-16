@@ -20,21 +20,11 @@ $(document).ready(function() {
    $(window).resize(function() {
       if ($(window).width() > 992) {
          windowSize = 3;
-         if (belowHeader == 0) {
-            $('.navbar').css({'fontSize': '1rem'});
-         }
-         else if (belowHeader == 1) {
-            $('.navbar').css({'fontSize': '1.2rem'});
-         }
+         $('.navbar').css({'fontSize': '1rem'});
       }
       else if ($(window).width() <= 992 && $(window).width() > 767) {
          windowSize = 2;
-         if (belowHeader == 0) {
-            $('.navbar').css({'fontSize': '1.1rem'});
-         }
-         else if (belowHeader == 1) {
-            $('.navbar').css({'fontSize': '1.2rem'});
-         }
+         $('.navbar').css({'fontSize': '1rem'});
       }
       else if ($(window).width() <= 767) {
          windowSize = 1;
@@ -54,10 +44,10 @@ $(document).ready(function() {
             $('.navlogoimg').addClass('imgexpand');
 
             if (windowSize == 3) {
-               $('.navbar').css({'fontSize': '1.2rem'});
+               $('.navbar').css({'fontSize': '0.9rem'});
             }
             else if (windowSize == 2) {
-               $('.navbar').css({'fontSize': '1.2rem'});
+               $('.navbar').css({'fontSize': '1rem'});
             }
             else if (windowSize == 1) {
                $('.navbar').css({'fontSize': '0.8rem'});
@@ -74,10 +64,10 @@ $(document).ready(function() {
          $('.navlogoimg').removeClass('imgexpand');
 
          if (windowSize == 3) {
-            $('.navbar').css({'fontSize': '1rem'});
+            $('.navbar').css({'fontSize': '0.9rem'});
          }
          else if (windowSize == 2) {
-            $('.navbar').css({'fontSize': '1.1rem'});
+            $('.navbar').css({'fontSize': '1rem'});
          }
          else if (windowSize == 1) {
             $('.navbar').css({'fontSize': '0.8rem'});

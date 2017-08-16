@@ -57,7 +57,7 @@
          <div class="navbar">
             <div class="navlogo" id="headeranchor" tabindex="0"><img class="navlogoimg" src="images/navbarlogo.png"/></div>
             <div class="navlinks" id="aboutanchor" tabindex="0"><span>ABOUT</span></div>
-            <div class="navlinks" id="productsanchor" tabindex="0"><span>CLIENTS</span></div>
+            <div class="navlinks" id="productsanchor" tabindex="0"><span>MANUFACTURERS</span></div>
             <div class="navlinks" id="teamanchor" tabindex="0"><span>TEAM</span></div>
             <div class="navlinks" id="associationsanchor" tabindex="0"><span>ASSOCIATIONS</span></div>
             <div class="navlinks" id="contactanchor" tabindex="0"><span>CONTACT</span></div>
@@ -111,7 +111,7 @@
       </div>
 
       <div class="products" id="products">
-         <h1>Client Companies &amp; Products</h1>
+         <h1>Manufacturers &amp; Products</h1>
          <div class="productblocks">
 
             <a href="http://www.libertypumps.com">

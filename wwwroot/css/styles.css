@@ -109,7 +109,7 @@ body {
    display: -ms-flexbox;
    display: flex;
    font-family: 'Roboto Slab', Helvetica;
-   font-size: 1rem;
+   font-size: 0.9rem;
    -webkit-transition: font-size 200ms ease;
    -o-transition: font-size 200ms ease;
    transition: font-size 200ms ease;
@@ -352,13 +352,13 @@ body {
 }
 
 .introphotofoldright {
-   background: url('../images/introfoldright.svg') no-repeat;
+   background: url('../images/introfoldright.png') no-repeat;
    background-size: contain;
    background-position: bottom;
 }
 
 .introphotofoldleft {
-   background: url('../images/introfoldleft.svg') no-repeat;
+   background: url('../images/introfoldleft.png') no-repeat;
    background-size: contain;
    background-position: top;
 }
@@ -884,7 +884,7 @@ body {
    .intro .introleft h1 {
       font-size: 1.4rem;
    }
-   .intro .introleft p {
+   .intro .introleft p, .navbar {
       font-size: 1rem;
    }
    .intro .introleft .intropara {
